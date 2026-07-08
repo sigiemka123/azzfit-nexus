@@ -57,7 +57,7 @@ export const tracks: Track[] = [
     spotifyUri: "spotify:album:6CLhZF9JUcQUuk0cjA9Rna",
     spotifyUrl: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna",
     description: "Wyebau Bombe is a total ear-bashing in the best way possible—a true summer banger that hits just right. It’s got that raw, infectious energy that makes you want to turn the volume all the way up and just let loose. It's the kind of track that effortlessly bridges the gap between chaotic noise and pure sonic bliss; perfect for cruising with the windows down or setting the tone for a wild night out. Definitely a must-have for any high-octane summer playlist.",
-    story: "An explosion occurred while masturbating.",
+    story: "an explosion occurred while masturbating.",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna" },
     ],
@@ -107,8 +107,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2718a4dae6027895e118744",
     spotifyUri: "spotify:track:2TYWDFt4UeUlWL1oT5buiX",
     spotifyUrl: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX",
-    description: "Dziwka 3 - Klasyczna dziweczka",
-    story: "Nagrana po detoksie walenia heroiny z pięt syroklatesa.",
+    description: "Dziwka 3 — a classic little lady, best enjoyed after a hit of crystal.",
+    story: "nagrana po detoksie walenia heroiny z pięt syroklatesa.",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX" },
     ],
