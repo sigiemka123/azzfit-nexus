@@ -56,8 +56,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028d5fd557fa2a648397d6a99f",
     spotifyUri: "spotify:album:6CLhZF9JUcQUuk0cjA9Rna",
     spotifyUrl: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna",
-    description: "Wyebau Bombe - to klasyczny wpierdol dla uszu, coś przyjemnego tzw. dobry letniaczek.",
-    story: "podczas walenia konia doszło do wybuchu",
+    description: "Wyebau Bombe is a total ear-bashing in the best way possible—a true summer banger that hits just right. It’s got that raw, infectious energy that makes you want to turn the volume all the way up and just let loose. It's the kind of track that effortlessly bridges the gap between chaotic noise and pure sonic bliss; perfect for cruising with the windows down or setting the tone for a wild night out. Definitely a must-have for any high-octane summer playlist.",
+    story: "An explosion occurred while masturbating.",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna" },
     ],
@@ -73,7 +73,7 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0267a391433eeb547b8db706d8",
     spotifyUri: "spotify:track:5NhI2NK6vA839EP49G6WxU",
     spotifyUrl: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU",
-    description: "Zabka - To polskie zgrupowanie meneli jest coraz niebiezpieczniejsze.",
+    description: "Żabka — this Polish gathering of drunks is becoming increasingly dangerous. It’s no longer just a few people hanging around; the atmosphere has turned genuinely hostile, creating an uncomfortable and often intimidating environment for anyone trying to go about their daily business. What used to be a minor nuisance has escalated into a real public safety concern that local authorities seem to be completely ignoring.",
     story: "mały wielki sklep",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU" },
@@ -90,8 +90,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027549c670ae21ddf9c5095c62",
     spotifyUri: "spotify:track:0TYa1Ha9ysZTcG3MHeMCNy",
     spotifyUrl: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy",
-    description: "Nike - Brzmieniowy gigant, który na zwale potrafi przyjebać.",
-    story: "air force one linia lotnicza",
+    description: "Nike — a sonic giant that hits with incredible force, even when you're feeling down. <br>It’s more than just a brand; it’s an auditory experience that knows exactly how to command your attention and shift your mood. Whether it's the crisp production or the sheer intensity of the sound, Nike delivers a punchy impact that cuts through the noise, making it the perfect companion for those moments when you need a powerful, high-energy soundtrack to snap you back into reality.",
+    story: "air force one airlines",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy" },
     ],
