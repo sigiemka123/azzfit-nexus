@@ -162,15 +162,16 @@ const dict = {
       or: "oder",
     },
   },
-} as const;
+};
 
-type Dict = (typeof dict)["en"];
+type Dict = typeof dict.en;
+const dicts: Record<Lang, Dict> = dict as Record<Lang, Dict>;
 
 const I18nCtx = createContext<{
   lang: Lang;
   t: Dict;
   setLang: (l: Lang) => void;
-}>({ lang: "en", t: dict.en, setLang: () => {} });
+}>({ lang: "en", t: dicts.en, setLang: () => {} });
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
