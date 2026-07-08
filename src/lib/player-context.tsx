@@ -105,6 +105,19 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Pause playback when the browser tab becomes hidden
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const onVis = () => {
+      if (document.hidden) {
+        controllerRef.current?.pause();
+        setIsPlaying(false);
+      }
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => document.removeEventListener("visibilitychange", onVis);
+  }, []);
+
   const play = useCallback(
     (t?: Track) => {
       const target = t ?? current;
