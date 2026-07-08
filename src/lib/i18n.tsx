@@ -188,7 +188,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     if (typeof window !== "undefined") localStorage.setItem("azzfit.lang", l);
   };
 
-  return <I18nCtx.Provider value={{ lang, t: dict[lang], setLang }}>{children}</I18nCtx.Provider>;
+  return <I18nCtx.Provider value={{ lang, t: dicts[lang], setLang }}>{children}</I18nCtx.Provider>;
 }
 
 export const useI18n = () => useContext(I18nCtx);
