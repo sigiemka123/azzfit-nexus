@@ -141,8 +141,6 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <I18nProvider>
         <PlayerProvider>
-  <BackgroundMusic /> {/* <--- DODAJ TĘ LINIKĘ TUTAJ */}
-  <Router /> 
           <LoadingScreen />
           <SiteNavbar />
           <main className="min-h-screen">
