@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Official site of AZZFIT — Hardtekk producer from Berlin. Latest tracks, streaming links, bookings.",
+          "Official site of AZZFIT — Hardtekk producer. Latest tracks, streaming links, bookings.",
       },
       { name: "author", content: "AZZFIT" },
       { name: "theme-color", content: "#0d1117" },
@@ -90,12 +90,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "AZZFIT — Hardtekk Producer" },
       {
         property: "og:description",
-        content: "Official site of AZZFIT — Hardtekk producer from Berlin. Latest tracks, streaming links, bookings.",
+        content: "Official site of AZZFIT — Hardtekk producer. Latest tracks, streaming links, bookings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "AZZFIT — Hardtekk Producer" },
-      { name: "twitter:description", content: "Official site of AZZFIT — Hardtekk producer from Berlin. Latest tracks, streaming links, bookings." },
+      { name: "twitter:description", content: "Official site of AZZFIT — Hardtekk producer. Latest tracks, streaming links, bookings." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

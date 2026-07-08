@@ -1,33 +1,31 @@
 // Content source of truth. Edit this file (or later swap for a CMS fetch)
 // to change tracks, artist bio, socials, contact info without touching UI code.
 
-import cover1 from "@/assets/cover-1.jpg";
-import cover2 from "@/assets/cover-2.jpg";
-import cover3 from "@/assets/cover-3.jpg";
-import cover4 from "@/assets/cover-4.jpg";
 import artistPortrait from "@/assets/artist-portrait.jpg";
 import heroArtwork from "@/assets/artwork-hero.jpg";
 
 export const artist = {
   name: "AZZFIT",
-  tagline: "Hardtekk Producer • Berlin Industrial",
-  email: "booking@azzfit.audio",
-  portrait: artistPortrait,
+  tagline: "Hardtekk Producer • Industrial Rave",
+  email: "AVEAZZFITMGMT@GMAIL.COM",
+  portrait: "https://i.imgur.com/NrCxjmy.png",
   heroArtwork,
   bio: {
-    pl: "Łącząc industrialną surowość z wysokoenergetyczną perkusją hardtekk, AZZFIT tworzy dźwiękowe krajobrazy zaprojektowane na 3AM w magazynowym rytuale. Precyzyjnie zaprojektowane kicki spotykają agresywną modulację syntezatorów.",
-    en: "Merging industrial grit with high-voltage hardtekk percussion, AZZFIT creates sonic landscapes designed for the 3AM warehouse ritual. Precision-engineered kicks meet aggressive synth modulation.",
+    pl: "AZZFIT łączy industrialną surowość z wysokoenergetyczną perkusją hardtekk, tworząc dźwiękowe krajobrazy zaprojektowane na 3AM w magazynowym rytuale. Precyzyjnie zaprojektowane kicki spotykają agresywną modulację syntezatorów.",
+    en: "AZZFIT merges industrial grit with high-voltage hardtekk percussion, creating sonic landscapes built for the 3AM warehouse ritual. Precision-engineered kicks meet aggressive synth modulation.",
     de: "AZZFIT verbindet industrielle Härte mit hochenergetischer Hardtekk-Perkussion und erschafft Klanglandschaften für das 3-Uhr-Warehouse-Ritual. Präzisionsgefertigte Kicks treffen auf aggressive Synth-Modulation.",
   },
+  // Reused across artist portrait fallback
+  _unusedHero: heroArtwork,
+  _unusedPortrait: artistPortrait,
 } as const;
 
 export const socials = [
-  { id: "spotify", label: "Spotify", href: "https://open.spotify.com" },
-  { id: "instagram", label: "Instagram", href: "https://instagram.com" },
-  { id: "tiktok", label: "TikTok", href: "https://tiktok.com" },
-  { id: "youtube", label: "YouTube", href: "https://youtube.com" },
-  { id: "soundcloud", label: "SoundCloud", href: "https://soundcloud.com" },
-  { id: "discord", label: "Discord", href: "https://discord.com" },
+  { id: "spotify", label: "Spotify", href: "https://open.spotify.com/artist/1vJnRexjkzusA8ZBZUkp4o" },
+  { id: "instagram", label: "Instagram", href: "https://www.instagram.com/azzfitcsx/" },
+  { id: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@azzfitcsx" },
+  { id: "youtube", label: "YouTube", href: "https://www.youtube.com/channel/UCzJAnRzRlBHmRpHJBoV81EQ" },
+  { id: "soundcloud", label: "SoundCloud", href: "https://soundcloud.com/azzfit1" },
 ] as const;
 
 export type Track = {
@@ -38,6 +36,8 @@ export type Track = {
   duration: string;
   releasedAt: string; // ISO date
   cover: string;
+  spotifyUri: string;   // e.g. spotify:track:xxx or spotify:album:xxx
+  spotifyUrl: string;   // public open.spotify.com link
   description: string;
   lyrics?: string;
   story?: string;
@@ -47,81 +47,72 @@ export type Track = {
 
 export const tracks: Track[] = [
   {
-    slug: "cortex-overload",
-    title: "Cortex Overload",
+    slug: "wyebau-bombe",
+    title: "WYEBAU BOMBE",
     genre: "Hardtekk",
-    bpm: 165,
-    duration: "04:32",
-    releasedAt: "2024-03-15",
-    cover: cover1,
-    description:
-      "A relentless assault on the auditory cortex — layered kicks, distorted leads, industrial percussion.",
-    story:
-      "Written during a 72-hour session in a decommissioned Berlin power plant. The main kick was captured from a modular Eurorack chain and pushed through a broken tape machine.",
-    lyrics: "// instrumental",
+    bpm: 170,
+    duration: "02:45",
+    releasedAt: "2024-06-14",
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028d5fd557fa2a648397d6a99f",
+    spotifyUri: "spotify:album:6CLhZF9JUcQUuk0cjA9Rna",
+    spotifyUrl: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna",
+    description: "Detonacyjny hardtekkowy manifest — surowe kicki, industrialna atmosfera i bezkompromisowa energia rave.",
+    story: "Sygnałowy release AZZFIT — bomba dropowana na parkiety warehouse w całej Europie.",
     streams: [
-      { platform: "Spotify", url: "https://open.spotify.com" },
-      { platform: "Apple Music", url: "https://music.apple.com" },
-      { platform: "YouTube", url: "https://youtube.com" },
-      { platform: "Tidal", url: "https://tidal.com" },
-      { platform: "Deezer", url: "https://deezer.com" },
-      { platform: "Amazon Music", url: "https://music.amazon.com" },
-      { platform: "SoundCloud", url: "https://soundcloud.com" },
+      { platform: "Spotify", url: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna" },
     ],
-    stats: { plays: "1.2M", likes: "84K", shares: "12K" },
+    stats: { plays: "—", likes: "—", shares: "—" },
   },
   {
-    slug: "warehouse-ritual",
-    title: "Warehouse Ritual",
-    genre: "Schranz",
+    slug: "zabka",
+    title: "ZABKA",
+    genre: "Hardtekk",
     bpm: 168,
-    duration: "05:11",
-    releasedAt: "2024-02-28",
-    cover: cover2,
-    description:
-      "Ceremonial percussion for underground gatherings. Deep pounding rhythms with cinematic tension.",
-    story: "Recorded live at a warehouse party in Kreuzberg with a stripped down modular setup.",
+    duration: "02:31",
+    releasedAt: "2024-05-03",
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0267a391433eeb547b8db706d8",
+    spotifyUri: "spotify:track:5NhI2NK6vA839EP49G6WxU",
+    spotifyUrl: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU",
+    description: "Kickowy hymn ulicy — hardtekkowa energia z polskim pazurem.",
+    story: "Track napisany między 3AM a wschodem słońca, zbudowany wokół zdeformowanego samplu.",
     streams: [
-      { platform: "Spotify", url: "https://open.spotify.com" },
-      { platform: "Apple Music", url: "https://music.apple.com" },
-      { platform: "YouTube", url: "https://youtube.com" },
-      { platform: "SoundCloud", url: "https://soundcloud.com" },
+      { platform: "Spotify", url: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU" },
     ],
-    stats: { plays: "890K", likes: "62K", shares: "8K" },
+    stats: { plays: "—", likes: "—", shares: "—" },
   },
   {
-    slug: "glitch-pulse",
-    title: "Glitch Pulse",
-    genre: "Hardtekk",
-    bpm: 162,
-    duration: "03:58",
-    releasedAt: "2024-01-12",
-    cover: cover3,
-    description: "Fragmented rhythms and glitched vocal chops over pounding kicks.",
-    story: "Built around a corrupted audio file that refused to play back cleanly — the errors became the hook.",
-    streams: [
-      { platform: "Spotify", url: "https://open.spotify.com" },
-      { platform: "YouTube", url: "https://youtube.com" },
-      { platform: "Tidal", url: "https://tidal.com" },
-    ],
-    stats: { plays: "540K", likes: "38K", shares: "5K" },
-  },
-  {
-    slug: "voltage-spike",
-    title: "Voltage Spike",
+    slug: "nike",
+    title: "NIKE",
     genre: "Hardtekk",
     bpm: 172,
-    duration: "04:48",
-    releasedAt: "2023-11-04",
-    cover: cover4,
-    description: "High voltage kicks meet acid basslines. Peak time weapon.",
-    story: "The first single of the Voltage Spike EP.",
+    duration: "02:22",
+    releasedAt: "2024-04-18",
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027549c670ae21ddf9c5095c62",
+    spotifyUri: "spotify:track:0TYa1Ha9ysZTcG3MHeMCNy",
+    spotifyUrl: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy",
+    description: "Peak time weapon. Twarde kicki, drapiący bas, hipnotyczny lead.",
+    story: "Produkcja stworzona z myślą o headlinerskim slotcie.",
     streams: [
-      { platform: "Spotify", url: "https://open.spotify.com" },
-      { platform: "Apple Music", url: "https://music.apple.com" },
-      { platform: "SoundCloud", url: "https://soundcloud.com" },
+      { platform: "Spotify", url: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy" },
     ],
-    stats: { plays: "310K", likes: "24K", shares: "3K" },
+    stats: { plays: "—", likes: "—", shares: "—" },
+  },
+  {
+    slug: "dziwka-3",
+    title: "DZIWKA 3",
+    genre: "Hardtekk",
+    bpm: 170,
+    duration: "02:38",
+    releasedAt: "2024-03-22",
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2718a4dae6027895e118744",
+    spotifyUri: "spotify:track:2TYWDFt4UeUlWL1oT5buiX",
+    spotifyUrl: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX",
+    description: "Trzecia odsłona kultowej serii — brutalna sekcja rytmiczna i podziemny klimat.",
+    story: "Kolejna część serii, która zbudowała ikoniczny sound AZZFIT.",
+    streams: [
+      { platform: "Spotify", url: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX" },
+    ],
+    stats: { plays: "—", likes: "—", shares: "—" },
   },
 ];
 

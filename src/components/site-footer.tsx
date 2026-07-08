@@ -14,7 +14,7 @@ export function SiteFooter() {
             AZZFIT
           </Link>
           <p className="font-mono text-[10px] uppercase tracking-widest text-zinc-500">
-            © {new Date().getFullYear()} NOISE CONSTRUCTIONS. {t.footer.rights}
+            © {new Date().getFullYear()} AZZFIT. {t.footer.rights}
           </p>
         </div>
 
