@@ -6,14 +6,14 @@ import heroArtwork from "@/assets/artwork-hero.jpg";
 
 export const artist = {
   name: "AZZFIT",
-  tagline: "Hardtekk Producer • Industrial Rave",
+  tagline: "Poland's first hardtekk rapper.",
   email: "AVEAZZFITMGMT@GMAIL.COM",
   portrait: "https://i.imgur.com/NrCxjmy.png",
   heroArtwork,
   bio: {
-    pl: "AZZFIT łączy industrialną surowość z wysokoenergetyczną perkusją hardtekk, tworząc dźwiękowe krajobrazy zaprojektowane na 3AM w magazynowym rytuale. Precyzyjnie zaprojektowane kicki spotykają agresywną modulację syntezatorów.",
-    en: "AZZFIT merges industrial grit with high-voltage hardtekk percussion, creating sonic landscapes built for the 3AM warehouse ritual. Precision-engineered kicks meet aggressive synth modulation.",
-    de: "AZZFIT verbindet industrielle Härte mit hochenergetischer Hardtekk-Perkussion und erschafft Klanglandschaften für das 3-Uhr-Warehouse-Ritual. Präzisionsgefertigte Kicks treffen auf aggressive Synth-Modulation.",
+    pl: "Azzfit to legenda, głównie hardtekk - Na co dzień mieszka w Polsce, pozostając przy tym niezwykle autentycznym i bezpośrednim człowiekiem – ceni sobie proste przyjemności, ruchanie i piwo.",
+    en: "Azzfit is a legend, best known for his hardtekk tracks. Based in Poland, he remains an incredibly authentic and down-to-earth guy who enjoys life’s simple pleasures—getting laid and having a beer.",
+    de: "Azzfit ist eine Legende, vor allem bekannt für seine Hardtekk-Tracks. Er lebt in Polen und ist nach wie vor ein unglaublich authentischer und bodenständiger Typ, der die einfachen Freuden des Lebens genießt – vögeln und ein Bierchen trinken.",
   },
   // Reused across artist portrait fallback
   _unusedHero: heroArtwork,
@@ -56,8 +56,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028d5fd557fa2a648397d6a99f",
     spotifyUri: "spotify:album:6CLhZF9JUcQUuk0cjA9Rna",
     spotifyUrl: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna",
-    description: "Detonacyjny hardtekkowy manifest — surowe kicki, industrialna atmosfera i bezkompromisowa energia rave.",
-    story: "Sygnałowy release AZZFIT — bomba dropowana na parkiety warehouse w całej Europie.",
+    description: "Wyebau Bombe - to klasyczny wpierdol dla uszu, coś przyjemnego tzw. dobry letniaczek.",
+    story: "podczas walenia konia doszło do wybuchu",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/album/6CLhZF9JUcQUuk0cjA9Rna" },
     ],
@@ -73,8 +73,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0267a391433eeb547b8db706d8",
     spotifyUri: "spotify:track:5NhI2NK6vA839EP49G6WxU",
     spotifyUrl: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU",
-    description: "Kickowy hymn ulicy — hardtekkowa energia z polskim pazurem.",
-    story: "Track napisany między 3AM a wschodem słońca, zbudowany wokół zdeformowanego samplu.",
+    description: "Zabka - To polskie zgrupowanie meneli jest coraz niebiezpieczniejsze.",
+    story: "mały wielki sklep",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/5NhI2NK6vA839EP49G6WxU" },
     ],
@@ -90,8 +90,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027549c670ae21ddf9c5095c62",
     spotifyUri: "spotify:track:0TYa1Ha9ysZTcG3MHeMCNy",
     spotifyUrl: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy",
-    description: "Peak time weapon. Twarde kicki, drapiący bas, hipnotyczny lead.",
-    story: "Produkcja stworzona z myślą o headlinerskim slotcie.",
+    description: "Nike - Brzmieniowy gigant, który na zwale potrafi przyjebać.",
+    story: "air force one linia lotnicza",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy" },
     ],
@@ -107,8 +107,8 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2718a4dae6027895e118744",
     spotifyUri: "spotify:track:2TYWDFt4UeUlWL1oT5buiX",
     spotifyUrl: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX",
-    description: "Trzecia odsłona kultowej serii — brutalna sekcja rytmiczna i podziemny klimat.",
-    story: "Kolejna część serii, która zbudowała ikoniczny sound AZZFIT.",
+    description: "Dziwka 3 - Klasyczna dziweczka",
+    story: "Nagrana po detoksie walenia heroiny z pięt syroklatesa.",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/2TYWDFt4UeUlWL1oT5buiX" },
     ],
