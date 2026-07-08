@@ -64,31 +64,6 @@ function HeroSection() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 1.3, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 grid w-full items-center gap-12 lg:grid-cols-[1fr_400px_1fr]"
-        >
-          <div className="hidden h-px bg-gradient-to-r from-transparent to-zinc-800 lg:block" />
-          <a href="#tracks" className="group relative mx-auto block w-full max-w-[360px]">
-            <motion.img
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.6 }}
-              src={artist.heroArtwork}
-              alt="Latest release artwork"
-              width={1024}
-              height={1024}
-              className="aspect-square w-full rounded-lg object-cover ring-1 ring-white/10"
-            />
-            <div className="pointer-events-none absolute -inset-4 rounded-2xl bg-neon/20 opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute left-3 top-3 rounded bg-black/60 px-2 py-1 font-mono text-[9px] uppercase tracking-widest text-neon backdrop-blur">
-              {t.hero.badge}
-            </div>
-          </a>
-          <div className="hidden h-px bg-gradient-to-l from-transparent to-zinc-800 lg:block" />
-        </motion.div>
-
-        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.5 }}
