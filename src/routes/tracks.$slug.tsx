@@ -147,7 +147,7 @@ function TrackPage() {
                 {t.trackDetail.streams}
               </h2>
               <div className="grid gap-2 sm:grid-cols-2">
-                {track.streams.map((s) => (
+                {track.streams.map((s: { platform: string; url: string }) => (
                   <a
                     key={s.platform}
                     href={s.url}
