@@ -124,7 +124,7 @@ function AboutSection() {
               className="aspect-[4/5] w-full rounded-lg object-cover ring-1 ring-white/10"
             />
             <div className="absolute -bottom-5 -right-5 hidden bg-neon p-5 text-deep sm:block">
-              <p className="font-display text-3xl font-extrabold leading-none">154K</p>
+              <p className="font-display text-3xl font-extrabold leading-none">20K+</p>
               <p className="mt-1 font-mono text-[9px] font-bold uppercase tracking-widest">
                 Monthly listeners
               </p>
