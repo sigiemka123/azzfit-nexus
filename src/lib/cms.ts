@@ -90,7 +90,7 @@ export const tracks: Track[] = [
     cover: "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027549c670ae21ddf9c5095c62",
     spotifyUri: "spotify:track:0TYa1Ha9ysZTcG3MHeMCNy",
     spotifyUrl: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy",
-    description: "Nike — a sonic giant that hits with incredible force, even when you're feeling down. <br>It’s more than just a brand; it’s an auditory experience that knows exactly how to command your attention and shift your mood. Whether it's the crisp production or the sheer intensity of the sound, Nike delivers a punchy impact that cuts through the noise, making it the perfect companion for those moments when you need a powerful, high-energy soundtrack to snap you back into reality.",
+    description: "Nike — a sonic giant that hits with incredible force, even when you're feeling down. It’s more than just a brand; it’s an auditory experience that knows exactly how to command your attention and shift your mood. Whether it's the crisp production or the sheer intensity of the sound, Nike delivers a punchy impact that cuts through the noise, making it the perfect companion for those moments when you need a powerful, high-energy soundtrack to snap you back into reality.",
     story: "air force one airlines",
     streams: [
       { platform: "Spotify", url: "https://open.spotify.com/track/0TYa1Ha9ysZTcG3MHeMCNy" },
