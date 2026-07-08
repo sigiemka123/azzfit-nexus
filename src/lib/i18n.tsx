@@ -6,7 +6,7 @@ const dict = {
   pl: {
     nav: { about: "O mnie", tracks: "Utwory", contact: "Kontakt", login: "Zaloguj" },
     hero: {
-      subtitle: "Producent Hardtekk • Berlin Industrial",
+      subtitle: "Producent Hardtekk • Industrial Rave",
       cta: "SŁUCHAJ TERAZ",
       badge: "NAJNOWSZY DROP",
     },
@@ -59,7 +59,7 @@ const dict = {
   en: {
     nav: { about: "About", tracks: "Tracks", contact: "Contact", login: "Login" },
     hero: {
-      subtitle: "Hardtekk Producer • Berlin Industrial",
+      subtitle: "Hardtekk Producer • Industrial Rave",
       cta: "LISTEN NOW",
       badge: "LATEST DROP",
     },
@@ -112,7 +112,7 @@ const dict = {
   de: {
     nav: { about: "Über", tracks: "Tracks", contact: "Kontakt", login: "Anmelden" },
     hero: {
-      subtitle: "Hardtekk Producer • Berlin Industrial",
+      subtitle: "Hardtekk Producer • Industrial Rave",
       cta: "JETZT HÖREN",
       badge: "NEUESTER DROP",
     },
