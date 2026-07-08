@@ -90,11 +90,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "AZZFIT — Hardtekk Producer" },
       {
         property: "og:description",
-        content: "Hardtekk producer from Berlin. Latest tracks, streaming links, bookings.",
+        content: "Official site of AZZFIT — Hardtekk producer from Berlin. Latest tracks, streaming links, bookings.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "AZZFIT — Hardtekk Producer" },
+      { name: "twitter:description", content: "Official site of AZZFIT — Hardtekk producer from Berlin. Latest tracks, streaming links, bookings." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
